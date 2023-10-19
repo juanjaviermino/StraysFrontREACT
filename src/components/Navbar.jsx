@@ -10,7 +10,7 @@ function NavbarStrays (props) {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/') {
+        if (location.pathname === '/StraysFrontREACT/') {
             setIsWlcmpg(true);
           } else {
             setIsWlcmpg(false);;
