@@ -23,7 +23,7 @@ function NavbarStrays (props) {
 
     return(
         <nav className={isWlcmpg ? 'navbar-wlcpg' : 'navbar'}> 
-            <Link className={isWlcmpg ? 'navbar-title-wlcpg' : 'navbar-title'} to="/">STRAYS</Link>
+            <Link className={isWlcmpg ? 'navbar-title-wlcpg' : 'navbar-title'} to="/StraysFrontREACT/">STRAYS</Link>
             {isLogged 
                 ? 
                 <div className="navbar-items">
