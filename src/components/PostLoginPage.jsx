@@ -18,9 +18,9 @@ function PostLoginPage (props) {
             <NavbarStrays logged={isLogged}/>
             <div className='container-fluid m-2'>
                 <Routes>
-                    <Route path="/" element={<WelcomePage text="USUARIOS LOGGEADOS" mensaje="¡Bienvenido!"/>} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/users" element={<Users />} />
+                    <Route path="/StraysFrontREACT/" element={<WelcomePage text="USUARIOS LOGGEADOS" mensaje="¡Bienvenido!"/>} />
+                    <Route path="/StraysFrontREACT/about" element={<About />} />
+                    <Route path="/StraysFrontREACT/users" element={<Users />} />
                 </Routes>
             </div>
         </Router>

@@ -27,13 +27,13 @@ function NavbarStrays (props) {
             {isLogged 
                 ? 
                 <div className="navbar-items">
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/users">Usuarios</Link>
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/about">About</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/users">Usuarios</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/about">About</Link>
                 </div>
                 : 
                 <div className="navbar-items">
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/register">Registrarse</Link>
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/login">Ingresar</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/register">Registrarse</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/login">Ingresar</Link>
                 </div>
             }
         </nav>

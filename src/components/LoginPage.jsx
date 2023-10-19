@@ -34,7 +34,7 @@ function LoginPage (props) {
                 const data = await res.json();
                 if(verification(data.password)){
                     toPreLoginPage(true);
-                    navigate('/'); // 
+                    navigate('/StraysFrontREACT/'); // 
                 } else{
                     window.alert("Contraseña incorrecta, intenta de nuevo");
                 }
@@ -67,7 +67,7 @@ function LoginPage (props) {
                         <button className="btn-action">
                             Ingresar
                         </button>
-                        <Link className="form-link" to="/register">¿No tienes una cuenta? Regístrate aquí</Link>
+                        <Link className="form-link" to="/StraysFrontREACT/register">¿No tienes una cuenta? Regístrate aquí</Link>
                     </form>
                 </div>
             </div>

@@ -23,11 +23,11 @@ function PreLoginPage(props) {
             <NavbarStrays logged={isLogged}/>
             <div className=''>
                 <Routes>
-                    <Route path="/" element={<WelcomePage text="USUARIOS NO LOGGEADOS" mensaje="Para acceder al contenido, ingresa al sistema"/>} />
-                    <Route path="/register" element={<RegistrationPage />} />
-                    <Route path="/login" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
-                    <Route path="/users" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
-                    <Route path="/about" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
+                    <Route path="/StraysFrontREACT/" element={<WelcomePage text="USUARIOS NO LOGGEADOS" mensaje="Para acceder al contenido, ingresa al sistema"/>} />
+                    <Route path="/StraysFrontREACT/register" element={<RegistrationPage />} />
+                    <Route path="/StraysFrontREACT/login" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
+                    <Route path="/StraysFrontREACT/users" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
+                    <Route path="/StraysFrontREACT/about" element={<LoginPage toPreLoginPage={toPreLoginPage}/>} />
                 </Routes>
             </div>
         </Router>

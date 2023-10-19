@@ -41,7 +41,7 @@ function RegistrationPage () {
                     setEmail('');
                   break;
                 case 200:
-                    navigate('/login'); // Navigate to the /login route
+                    navigate('/StraysFrontREACT/login'); // Navigate to the /login route
                   break;
                 default:
                     setName('');
@@ -92,7 +92,7 @@ function RegistrationPage () {
                         <button className='btn-action'>
                             Registrarse
                         </button>
-                        <Link className="form-link" to="/login">¿Ya tienes una cuenta? Ingresa aquí</Link>
+                        <Link className="form-link" to="/StraysFrontREACT/login">¿Ya tienes una cuenta? Ingresa aquí</Link>
                     </form>
                 </div>
             </div>    
