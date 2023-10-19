@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@400;500;600;700&family=Merriweather+Sans:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Young+Serif&display=swap');
+
+/*--------------GENERAL------------------*/
+:root {
+
+    /*Colors*/
+    --strays-color: #a03982;
+    --strays-white: #f5f5f5;
+    --strays-secondary-color: #c646a1;
+
+    /*Fonts*/
+    --body-font: 'Roboto', sans-serif;
+    --title-font: 'Gabarito', sans-serif;
+    --fancy-font: 'Merriweather Sans', sans-serif;
+
+    /*Height for pages*/
+    --page-height: 92vh;
+}
+
+.body-text {
+    color: var(--strays-white);
+    font-family: var(--body-font);
+}
+
+.title-text {
+    color: var(--strays-color);
+    font-family: var(--title-font);
+}
+
+/*--------------NAV BAR------------------*/
+.navbar-title{
+    font-size:x-large;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--strays-color);
+    font-family: var(--title-font);
+    font-weight: 600;
+}
+
+.navbar-title-wlcpg{
+    font-size:x-large;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--strays-white);
+    font-family: var(--title-font);
+    font-weight: 600;
+}
+
+.navbar-title:hover{
+    color: var(--strays-secondary-color);
+}
+
+.navbar-title-wlcpg:hover{
+    color: rgb(219, 219, 219);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding:18px;
+    background-color: #f5f5f5 ;
+    height: 18px;
+}
+
+.navbar-wlcpg{
+    display: flex;
+    flex-direction: row;
+    padding:18px;
+    background-color: var(--strays-color) ;
+    height: 18px;
+}
+
+.nav-item{
+    color: var(--strays-color);
+    font-family: var(--body-font);
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+.nav-item-wlcpg{
+    color: var(--strays-white);
+    font-family: var(--body-font);
+    font-weight: 400;
+    margin-left: 10%;
+}
+
+.navbar-items{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item:hover{
+    color: var(--strays-secondary-color);
+}
+
+.nav-item-wlcpg:hover{
+    color: rgb(219, 219, 219);
+}
+
+/*--------------WELCOME PAGE------------------*/
+.welcome-page{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this to center vertically */
+    height: 90vh; /* Ensure the container takes the full viewport height */
+}
+
+.welcome-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video{
+    width: 100%;
+    height: 100%; /* Use 100% to cover the full container */
+    height: 94vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.welcome-page-text{
+    text-align: center;
+    color: var(--strays-white);
+}
+
+.welcome-page-container h2{
+    font-family: var(--fancy-font);
+    font-size: xx-large;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.welcome-page-container h3{
+    font-family: var(--body-font);
+    font-size: medium;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+/*--------------GRADIENT BACKGROUND------------------*/
+.gradient-background {
+    background: linear-gradient(293deg, #4d46c6, #630e4b);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 26s ease infinite;
+    -moz-animation: AnimationName 26s ease infinite;
+    animation: AnimationName 26s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+
+/*--------------REGISTRATION PAGE------------------*/
+
+.reg-page-container{
+    height: var(--page-height);
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
+}
+
+.reg-message-space{
+    grid-column: 2 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg-message-space h1{
+    margin: 0;
+    font-family: var(--fancy-font);
+    color: var(--strays-white);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.reg-message-space p{
+    margin-top: 20px;
+    font-family: var(--body-font);
+    color: var(--strays-white);
+    font-size: medium;
+    width: 60%;
+    text-align: center;
+}
+
+.reg-form-space{
+    grid-column: 3 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg-form{
+    background-color: #f5f5f559;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 60%;
+}
+
+.reg-form h2{
+    color: white;
+    font-family: var(--title-font);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form{
+    width: 70%;
+    margin:0;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    flex-grow: 1;
+    height: 35px;
+    margin-bottom: 2%;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    border-width: 0;
+}
+
+input:focus{
+    border: 2px solid var(--strays-color);
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+.form button{
+    width: 60%;
+    margin:  18px auto 0 auto;
+    border-radius: 20px;
+}
+
+.form button:focus{
+    outline: none;
+}
+
+.btn-action{
+    color: white;
+    background-color: var(--strays-color);
+    font-family: var(--title-font);
+    font-weight: 400;
+}
+
+.btn-action:hover{
+    background-color: var(--strays-secondary-color);
+    border-width: 0;
+}
+
+.form-link{
+    color: var(--strays-white);
+    font-family: var(--body-font);
+    font-weight: 400;
+    font-size: small;
+    margin: 8px auto 0 auto;
+}
+
+.form-link:hover{
+    color: lightgray;
+}
+
+/*--------------LOGIN PAGE------------------*/
+
+.log-page-container{
+    height: var(--page-height);
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
+}
+
+.log-message-space{
+    grid-column: 2 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.log-message-space h1{
+    margin: 0;
+    font-family: var(--fancy-font);
+    color: var(--strays-white);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.log-message-space p{
+    margin-top: 20px;
+    font-family: var(--body-font);
+    color: var(--strays-white);
+    font-size: medium;
+    width: 85%;
+    text-align: center;
+}
+
+.log-form-space{
+    grid-column: 3 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
