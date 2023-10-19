@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 function RegistrationPage () {
 
-    const API = process.env.REACT_APP_API;
+    const API = "https://straysbackend.onrender.com";
     const navigate = useNavigate(); // Initialize the history object
 
     const [name, setName] = useState('');
