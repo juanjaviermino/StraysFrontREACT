@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 
 function LoginPage (props) {
 
-    const API = "http://localhost:5000";
+    const API = process.env.REACT_APP_API;
     const navigate = useNavigate(); // Initialize the history object
 
     const [email, setEmail] = useState('');
