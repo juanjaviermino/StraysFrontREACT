@@ -59,7 +59,7 @@ function Users (){
         setUsers(data);
     }
 
-    // FunciÃ³n para eliminar un usuario
+    // Funcion para eliminar un usuario
     const deleteUser = async (id) => {
         const response = await fetch(`${API}/user/${id}`);
         const userData = await response.json();

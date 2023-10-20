@@ -4,6 +4,10 @@ import NavbarStrays from "./Navbar";
 import About from "./About";
 import WelcomePage from "./WelcomePage";
 import Users from "./Users";
+import Products from "./Products";
+import Sellers from "./Sellers";
+import Sales from "./Sales";
+import SalesSummary from "./SalesSummary";
 
 function PostLoginPage (props) {
 
@@ -21,6 +25,10 @@ function PostLoginPage (props) {
                     <Route path="/StraysFrontREACT/" element={<WelcomePage text="USUARIOS LOGGEADOS" mensaje="¡Bienvenido!"/>} />
                     <Route path="/StraysFrontREACT/about" element={<About />} />
                     <Route path="/StraysFrontREACT/users" element={<Users />} />
+                    <Route path="/StraysFrontREACT/products" element={<Products />} />
+                    <Route path="/StraysFrontREACT/sellers" element={<Sellers />} />
+                    <Route path="/StraysFrontREACT/sales" element={<Sales />} />
+                    <Route path="/StraysFrontREACT/salessummary" element={<SalesSummary />} />
                 </Routes>
             </div>
         </Router>

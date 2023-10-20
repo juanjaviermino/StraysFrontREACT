@@ -5,7 +5,7 @@ import PostLoginPage from "./components/PostLoginPage";
 
 function App() {
 
-  const [isLogged, SetIsLogged] = useState(false);
+  const [isLogged, SetIsLogged] = useState(false); //Cambiar a false
 
   function toAppPage(logged){
     SetIsLogged(logged);

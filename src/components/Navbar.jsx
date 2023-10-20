@@ -4,7 +4,7 @@ import "./ComponentStyles.css"
 
 function NavbarStrays (props) {
 
-    const [isLogged, setIsLogged] = useState(false);
+    const [isLogged, setIsLogged] = useState(false); //cambiar a false
     const [isWlcmpg, setIsWlcmpg] = useState();
 
     const location = useLocation();
@@ -27,8 +27,10 @@ function NavbarStrays (props) {
             {isLogged 
                 ? 
                 <div className="navbar-items">
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/users">Usuarios</Link>
-                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/about">About</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/sellers">Usuarios</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/products">Productos</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/sales">Ventas</Link>
+                    <Link className={isWlcmpg ? 'nav-item-wlcpg' : 'nav-item'} to="/StraysFrontREACT/salessummary">Resumen</Link>
                 </div>
                 : 
                 <div className="navbar-items">
