@@ -2,12 +2,19 @@
 
 # Tabla de Contenidos
 
+- [0. Notas de actualización importantes](#0-notas-de-actualización-importantes)
 - [1. Introducción al Framework MVC](#1-introducción-al-framework-mvc)
   - [Diseño de Ingeniería](#diseño-de-ingeniería)
 - [2. Implementación de Login con urls protegidas](#2-implementación-de-login-con-urls-protegidas)
   - [Diagrama del workflow del login](#diagrama-del-workflow-del-login)
 - [3. Implementación de un ejercicio entre varias tablas (Mini core)](#3-implementación-de-un-ejercicio-entre-varias-tablas-mini-core)
   - [Diagrama de despliegue de STRAYS](#diagrama-de-despliegue-de-strays)
+
+## 0. Notas de actualización importantes
+
+- Para la [Introducción al Framework MVC](#1-introducción-al-framework-mvc) se utilizó WebPack como builder y una base de datos en MongoDB.
+- Para la [Implementación de Login con urls protegidas](#2-implementación-de-login-con-urls-protegidas) se cambió la base de datos a SQL Server.
+- Para la [Implementación de un ejercicio entre varias tablas (Mini core)](#3-implementación-de-un-ejercicio-entre-varias-tablas-mini-core) se cambió el builder a Vite y la base de datos a PostgreSQL.
 
 ## 1. Introducción al Framework MVC
 
