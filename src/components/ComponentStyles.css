@@ -27,11 +27,27 @@
     font-family: var(--title-font);
 }
 
+/*--------------APP------------------*/
+.app-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.pages-space{
+    grid-row: 2 / span 1;
+}
+
+.navbar-space{
+    grid-row: 1 / span 1;
+}
+
 /*--------------NAV BAR------------------*/
 .navbar-title{
     font-size:x-large;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +59,6 @@
 
 .navbar-title-wlcpg{
     font-size:x-large;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,17 +79,21 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    padding:18px;
+    padding-left: 18px;
     background-color: #f5f5f5 ;
-    height: 18px;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
 }
 
 .navbar-wlcpg{
     display: flex;
     flex-direction: row;
-    padding:18px;
+    padding-left: 18px;
     background-color: var(--strays-color) ;
-    height: 18px;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
 }
 
 .nav-item{
@@ -93,7 +111,6 @@
 }
 
 .navbar-items{
-    margin-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,41 +126,50 @@
 
 /*--------------WELCOME PAGE------------------*/
 .welcome-page{
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Add this to center vertically */
-    height: 90vh; /* Ensure the container takes the full viewport height */
+    height: 100%;
+    width: 100%;
+    background-color: #4d46c6;
+    
+    position: relative;
 }
 
-.welcome-page-container{
+.background-video{
+    object-fit: cover;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: absolute;
+    z-index: 2;
+}
+
+.wlc-text{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    color: white;
 
-.background-video{
-    width: 100%;
-    height: 100%; /* Use 100% to cover the full container */
-    height: 94vh;
-    object-fit: cover;
     position: absolute;
-    z-index: -1;
+    z-index: 3;
 }
 
-.welcome-page-text{
-    text-align: center;
-    color: var(--strays-white);
-}
-
-.welcome-page-container h2{
+.wlc-text h2{
     font-family: var(--fancy-font);
     font-size: xx-large;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.welcome-page-container h3{
+.wlc-text h3{
     font-family: var(--body-font);
     font-size: medium;
     margin-top: 0;
@@ -179,7 +205,7 @@
 /*--------------REGISTRATION PAGE------------------*/
 
 .reg-page-container{
-    height: var(--page-height);
+    height: 100%;
     display: grid;
     grid-template-columns: 10% 30% 60%;
 }

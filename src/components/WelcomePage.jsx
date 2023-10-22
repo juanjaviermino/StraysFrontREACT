@@ -5,13 +5,11 @@ import video from "../assets/wlcVideo.mp4"
 function WelcomePage (props) {
     return(
         <div className="welcome-page">
-            <video autoPlay loop muted className="background-video">
-                <source src={video} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div className="welcome-page-container">
-                <h2 className="welcome-page-text">STRAYS</h2>
-                <h3 className="welcome-page-text">Reencuentra la Felicidad</h3>
+            <div className="overlay"/>
+            <video className="background-video" autoPlay loop muted src={video} type="video/mp4">a</video>
+            <div className="wlc-text">
+                <h2>STRAYS</h2>
+                <h3>Reencuentra la Felicidad</h3>
             </div>
         </div>
     );
