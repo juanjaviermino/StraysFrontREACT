@@ -1,21 +1,35 @@
-import { useState } from 'react'
-import './App.css'
-import PreLoginPage from "./components/PreLoginPage";
-import PostLoginPage from "./components/PostLoginPage";
+import React from 'react';
+import LandingPage from './components/landingPageComponents/LandingPage';
+import LoginPage from './components/accountMgmtComponents/LoginPage'; // You need to create this component
+import RegisterPage from './components/accountMgmtComponents/RegistrationPage'; // You need to create this component
+import Navbar from './components/navbarComponents/Navbar'; // You need to create this component
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import ProvinciasPage from './components/adminComponents/Provincia/ProvinciasPage';
+import CiudadesPage from './components/adminComponents/Ciudad/CiudadesPage';
+import EspeciesPage from './components/adminComponents/Especie/EspeciesPage';
+import RazasPage from './components/adminComponents/Raza/RazasPage';
 
 function App() {
 
-  const [isLogged, SetIsLogged] = useState(false); //Cambiar a false
-
-  function toAppPage(logged){
-    SetIsLogged(logged);
-    console.log("Usuario loggeado: " + logged);
-  }
+  sessionStorage.setItem('isLogged', true);
 
   return (
-    <div>
-      {isLogged ? <PostLoginPage logged={isLogged}/> : <PreLoginPage logged={isLogged} toAppPage={toAppPage}/>}
-    </div>
+    <Router>
+      <header className='root__header'>
+        <Navbar/>
+      </header>
+      <main className='root__main'>
+        <Routes>
+          <Route path="/StraysFrontREACT/" element={<LandingPage />} />
+          <Route path="/StraysFrontREACT/register" element={<RegisterPage />} />
+          <Route path="/StraysFrontREACT/login" element={<LoginPage />} />
+          <Route path="/StraysFrontREACT/provincias" element={<ProvinciasPage />} />
+          <Route path="/StraysFrontREACT/ciudades" element={<CiudadesPage />} />
+          <Route path="/StraysFrontREACT/especies" element={<EspeciesPage />} />
+          <Route path="/StraysFrontREACT/razas" element={<RazasPage />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

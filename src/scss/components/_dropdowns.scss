@@ -1,0 +1,34 @@
+.dropdown{
+    &__error{
+        @include flex-row(center, center);
+        gap: 5px;
+        width: 100%;
+        height: 35px;
+        padding: 0;
+
+        &-msg{
+            height: 100%;
+            width: 100%;
+            border: solid 1px #ced4da;
+            border-radius: 10px;
+            background-color: $strays-white;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+
+            span{
+                @include font-style(14px, 'thin', $neutral-gray, $body-font);
+            }
+        }
+    }
+}
+
+.p-dropdown{
+    height: 40px;
+    border-radius: 10px;
+    height: 35px !important;
+
+    span{
+        @include font-style(14px, 'thin', $neutral-gray, $body-font);
+    }
+}
